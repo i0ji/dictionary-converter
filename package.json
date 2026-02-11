@@ -21,9 +21,9 @@
     "@types/node": "^25",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "autoprefixer": "^10.4.23",
+    "autoprefixer": "^10.4.24",
     "docx": "^9.5.1",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "eslint-config-next": "16.1.6",
     "gh-pages": "^6.3.0",
     "sass": "^1.97.3",
@@ -34,6 +34,15 @@
     "onlyBuiltDependencies": [
       "@parcel/watcher",
       "sharp"
-    ]
+    ],
+    "auditConfig": {
+      "ignoreCves": [
+        "CVE-2023-30533",
+        "CVE-2024-22363"
+      ]
+    }
+  },
+  "overrides": {
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "dictionary-converter",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -8,7 +8,7 @@
     "lint": "next lint",
     "build": "next build"
   },
-  "homepage": "https://i0ji.github.io/w_dictionary_converter/",
+  "homepage": "https://i0ji.github.io/dictionary-converter/",
   "dependencies": {
     "file-saver": "^2.0.5",
     "next": "16.1.6",

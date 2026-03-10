@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[23985,["/w_dictionary_converter/_next/static/chunks/6a2aec184c0b1ec7.js"],"default"]
-3:I[93552,["/w_dictionary_converter/_next/static/chunks/c8c735cec0296305.js"],"OutletBoundary"]
+2:I[23985,["/dictionary-converter/_next/static/chunks/4610530765de128b.js"],"default"]
+3:I[93552,["/dictionary-converter/_next/static/chunks/79b137a3d246140c.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-:HL["/w_dictionary_converter/_next/static/chunks/91a2b52654dcbd56.css","style"]
-0:{"buildId":"XNbABqv8au_ZGL56POr7L","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-red-500","children":["$","$L2",null,{}]}],[["$","link","0",{"rel":"stylesheet","href":"/w_dictionary_converter/_next/static/chunks/91a2b52654dcbd56.css","precedence":"next"}],["$","script","script-0",{"src":"/w_dictionary_converter/_next/static/chunks/6a2aec184c0b1ec7.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+:HL["/dictionary-converter/_next/static/chunks/91a2b52654dcbd56.css","style"]
+0:{"buildId":"BjPF8pLxo0wstyz6DlXxZ","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-red-500","children":["$","$L2",null,{}]}],[["$","link","0",{"rel":"stylesheet","href":"/dictionary-converter/_next/static/chunks/91a2b52654dcbd56.css","precedence":"next"}],["$","script","script-0",{"src":"/dictionary-converter/_next/static/chunks/4610530765de128b.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
 5:null

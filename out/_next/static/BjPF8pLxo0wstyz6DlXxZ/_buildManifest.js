@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/w_dictionary_converter//_next/:path+",
-        "destination": "/w_dictionary_converter/_next/:path+"
+        "source": "/dictionary-converter//_next/:path+",
+        "destination": "/dictionary-converter/_next/:path+"
       }
     ],
     "fallback": []

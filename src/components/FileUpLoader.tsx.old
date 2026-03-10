@@ -1,0 +1,160 @@
+// 'use client';
+
+// import React, { useState } from 'react';
+// import { saveAs } from 'file-saver';
+// import ExcelJS from 'exceljs';
+// import styles from './FileUploader.module.scss';
+
+// export default function FileUploader() {
+//   const [fileContent, setFileContent] = useState<string | null>(null);
+//   const [isDragging, setIsDragging] = useState(false);
+//   const [isLoading, setIsLoading] = useState(false);
+//   const [isDisabled, setIsDisabled] = useState(false);
+
+//   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+//     if (e.target.files && e.target.files[0]) {
+//       const file = e.target.files[0];
+//       const text = await file.text();
+//       setFileContent(text);
+//       setIsDisabled(false);
+//     }
+//   };
+
+//   const handleDrop = async (e: React.DragEvent<HTMLDivElement>) => {
+//     e.preventDefault();
+//     setIsDragging(false);
+//     const file = e.dataTransfer.files[0];
+//     if (file) {
+//       const text = await file.text();
+//       setFileContent(text);
+//       setIsDisabled(false);
+//     }
+//   };
+
+//   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
+//     e.preventDefault();
+//     setIsDragging(true);
+//   };
+
+//   const handleDragLeave = () => {
+//     setIsDragging(false);
+//   };
+
+//   // const createExcelDocument = async () => {
+
+//   const createExcelDocument = async (e: React.MouseEvent<HTMLParagraphElement>) => {
+//     e.stopPropagation();
+//     if (!fileContent) return;
+
+//     setIsLoading(true);
+//     setIsDisabled(true);
+
+//     try {
+//       const rows = fileContent
+//         .trim()
+//         .split('\n')
+//         .map((line: string) => line.split('^'));
+
+//       const workbook = new ExcelJS.Workbook();
+//       const worksheet = workbook.addWorksheet('Data');
+
+//       rows.forEach((row, rowIndex) => {
+//         row.forEach((cell, colIndex) => {
+//           worksheet.getCell(rowIndex + 1, colIndex + 1).value = cell;
+//         });
+//       });
+
+//       const buffer = await workbook.xlsx.writeBuffer();
+//       const blob = new Blob([buffer], {
+//         type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+//       });
+//       saveAs(blob, 'table_data.xlsx');
+//     } catch (error) {
+//       console.error('Excel error:', error);
+//     } finally {
+//       // ✅ ПОЛНЫЙ СБРОС ВСЕХ состояний
+//       setTimeout(() => {
+//         setIsLoading(false);
+//         setIsDisabled(false);
+//         setFileContent(null);
+//       }, 100); // Небольшая задержка для визуального фидбека
+//     }
+//   };
+
+//   //   setIsLoading(true);
+//   //   setIsDisabled(true);
+
+//   //   if (fileContent) {
+//   //     const rows = fileContent
+//   //       .trim()
+//   //       .split('\n')
+//   //       .map((line) => line.split('^'));
+
+//   //     const workbook = new ExcelJS.Workbook();
+//   //     const worksheet = workbook.addWorksheet('Data');
+
+//   //     worksheet.columns = rows[0].map((cell, i) => ({ header: cell, key: `col${i}` }));
+
+//   //     rows.slice(1).forEach((row) => {
+//   //       worksheet.addRow(row);
+//   //     });
+
+//   //     const buffer = await workbook.xlsx.writeBuffer();
+//   //     const blob = new Blob([buffer], {
+//   //       type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+//   //     });
+//   //     saveAs(blob, 'table_data.xlsx');
+//   //   }
+//   // };
+
+//   return (
+//     <div>
+//       {/* <div
+//         className={`${styles.dropArea} ${isDragging ? styles.dragging : ''} ${
+//           isLoading || isDisabled ? styles.disabled : ''
+//         }`}
+//         onDrop={handleDrop}
+//         onDragOver={handleDragOver}
+//         onDragLeave={handleDragLeave}
+//         onClick={() => {
+//           if (!fileContent) document.getElementById('fileInput')?.click();
+//         }}
+//       >
+//         {!fileContent ? (
+//           <p>Перетащите или выберите файл!</p>
+//         ) : (
+//           <p onClick={createExcelDocument}>Сохранить в Excel!</p>
+//         )}
+//       </div> */}
+//       <div
+//         className={`${styles.dropArea} ${isDragging ? styles.dragging : ''} ${
+//           isLoading || isDisabled ? styles.disabled : ''
+//         }`}
+//         onDrop={handleDrop}
+//         onDragOver={handleDragOver}
+//         onDragLeave={handleDragLeave}
+//         onClick={() => {
+//           if (!fileContent && !isLoading && !isDisabled) {
+//             document.getElementById('fileInput')?.click();
+//           }
+//         }}
+//       >
+//         {isLoading ? (
+//           <p>⏳ Создаём Excel...</p>
+//         ) : fileContent ? (
+//           <p onClick={createExcelDocument}>Сохранить в Excel!</p>
+//         ) : (
+//           <p>Перетащите или выберите файл!</p>
+//         )}
+//       </div>
+//       <input
+//         id="fileInput"
+//         type="file"
+//         accept=".txt"
+//         onChange={handleFileChange}
+//         style={{ display: 'none' }}
+//         disabled={isDisabled}
+//       />
+//     </div>
+//   );
+// }

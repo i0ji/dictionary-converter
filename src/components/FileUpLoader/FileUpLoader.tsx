@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { saveAs } from 'file-saver';
-import * as XLSX from 'xlsx';
 import styles from './FileUploader.module.scss';
+import * as XLSX from 'xlsx';
 
 export default function FileUploader() {
   const [fileContent, setFileContent] = useState<string | null>(null);

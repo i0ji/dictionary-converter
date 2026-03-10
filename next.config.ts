@@ -10,8 +10,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-  basePath: isProd ? '/w_dictionary_converter' : '',
-  assetPrefix: isProd ? '/w_dictionary_converter/' : '',
+  basePath: isProd ? '/dictionary-converter' : '',
+  assetPrefix: isProd ? '/dictionary-converter/' : '',
   sassOptions: {
     includePaths: [path.join(__dirname, 'src')],
   },

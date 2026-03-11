@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[23985,["/dictionary-converter/_next/static/chunks/4610530765de128b.js"],"default"]
+2:I[23985,["/dictionary-converter/_next/static/chunks/b9af8fb33332a365.js"],"default"]
 3:I[93552,["/dictionary-converter/_next/static/chunks/79b137a3d246140c.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-:HL["/dictionary-converter/_next/static/chunks/91a2b52654dcbd56.css","style"]
-0:{"buildId":"BjPF8pLxo0wstyz6DlXxZ","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-red-500","children":["$","$L2",null,{}]}],[["$","link","0",{"rel":"stylesheet","href":"/dictionary-converter/_next/static/chunks/91a2b52654dcbd56.css","precedence":"next"}],["$","script","script-0",{"src":"/dictionary-converter/_next/static/chunks/4610530765de128b.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+:HL["/dictionary-converter/_next/static/chunks/d86a1bad4c458865.css","style"]
+0:{"buildId":"qNXyIXrzfRAmpAIyHL9-7","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-red-500","children":["$","$L2",null,{}]}],[["$","link","0",{"rel":"stylesheet","href":"/dictionary-converter/_next/static/chunks/d86a1bad4c458865.css","precedence":"next"}],["$","script","script-0",{"src":"/dictionary-converter/_next/static/chunks/b9af8fb33332a365.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
 5:null

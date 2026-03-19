@@ -5,7 +5,7 @@ import ExcelJS from 'exceljs';
 import styles from './FileUploader.module.scss';
 
 export default function FileUploader() {
-  const [excelBuffer, setExcelBuffer] = useState<Uint8Array | null>(null);
+  const [excelBuffer, setExcelBuffer] = useState<ArrayBuffer | null>(null);
   const [parsedRows, setParsedRows] = useState<string[][] | null>(null);
   const [progress, setProgress] = useState(0);
   const [phase, setPhase] = useState<'idle' | 'processing' | 'ready' | 'saving'>('idle');

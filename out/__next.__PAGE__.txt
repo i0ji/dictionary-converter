@@ -3,5 +3,5 @@
 3:I[90384,["/dictionary-converter/_next/static/chunks/0.pmrs4maf~4_.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
 :HL["/dictionary-converter/_next/static/chunks/12bm22b-9vu02.css","style"]
-0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-red-500","children":["$","$L2",null,{}]}],[["$","link","0",{"rel":"stylesheet","href":"/dictionary-converter/_next/static/chunks/12bm22b-9vu02.css","precedence":"next"}],["$","script","script-0",{"src":"/dictionary-converter/_next/static/chunks/0xkjd148qpq96.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"0trPedDEM22iXM9ERJZ9G"}
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-red-500","children":["$","$L2",null,{}]}],[["$","link","0",{"rel":"stylesheet","href":"/dictionary-converter/_next/static/chunks/12bm22b-9vu02.css","precedence":"next"}],["$","script","script-0",{"src":"/dictionary-converter/_next/static/chunks/0xkjd148qpq96.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"a9K2ixaXiJ48BPONlheJy"}
 5:null

@@ -43,8 +43,8 @@ export default function FileUploader() {
         });
       });
 
-      const buffer = await workbook.xlsx.writeBuffer();
-      setExcelBuffer(buffer);
+      const buffer = await workbook.xlsx.writeBuffer(); // Buffer | ArrayBuffer
+      setExcelBuffer(buffer); // ✅ Работает!
 
       setProgress(100);
       setPhase('ready');

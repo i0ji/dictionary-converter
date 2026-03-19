@@ -1,5 +1,5 @@
 import type { NextConfig } from 'next';
-import path from 'path'; 
+import path from 'path';
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -18,5 +18,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-// 1167795659
-// https://sslvpn.rtaru.com:8443/sslvpn-plus/doaction.svp?type=login

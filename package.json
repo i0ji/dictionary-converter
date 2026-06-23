@@ -1,6 +1,6 @@
 {
   "name": "dictionary-converter",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -11,37 +11,24 @@
   "homepage": "https://i0ji.github.io/dictionary-converter/",
   "dependencies": {
     "file-saver": "^2.0.5",
-    "next": "16.1.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "next": "16.2.9",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
   },
   "devDependencies": {
     "@types/file-saver": "^2.0.7",
-    "@types/node": "^25.4.0",
-    "@types/react": "^19.2.14",
+    "@types/node": "^26.0.0",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@types/xlsx": "^0.0.36",
-    "autoprefixer": "^10.4.27",
-    "docx": "^9.6.1",
-    "eslint": "^10.0.3",
-    "eslint-config-next": "16.1.6",
+    "autoprefixer": "^10.5.0",
+    "docx": "^9.7.1",
+    "eslint": "^10.5.0",
+    "eslint-config-next": "16.2.9",
     "exceljs": "^4.4.0",
     "gh-pages": "^6.3.0",
-    "sass": "^1.97.3",
-    "tailwindcss": "^4.2.1",
-    "typescript": "^5.9.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "sharp"
-    ],
-    "overrides": {
-      "minimatch@<3.1.3": ">=3.1.3",
-      "minimatch@>=9.0.0 <9.0.6": ">=9.0.6",
-      "minimatch@>=9.0.0 <9.0.7": ">=9.0.7",
-      "minimatch@<3.1.4": ">=3.1.4",
-      "immutable@>=5.0.0 <5.1.5": ">=5.1.5"
-    }
+    "sass": "^1.101.0",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^6.0.3",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   }
 }

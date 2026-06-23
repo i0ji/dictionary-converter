@@ -1,5 +1,25 @@
+allowBuilds:
+  '@parcel/watcher': set this to true or false
+  sharp: set this to true or false
+  unrs-resolver: set this to true or false
+minimumReleaseAgeExclude:
+  - xlsx@0.19.3
+  - xlsx@0.20.2
+  - flatted@3.4.2
+  - brace-expansion@5.0.5
+  - picomatch@2.3.2
+  - picomatch@4.0.4
+  - postcss@8.5.10
+  - uuid@11.1.1
+  - brace-expansion@5.0.6
+  - tmp@0.2.6
+  - '@babel/core@7.29.1'
 overrides:
   '@eslint/plugin-kit@<0.3.4': '>=0.3.4'
   brace-expansion@>=1.0.0 <=1.1.11: '>=1.1.12'
   brace-expansion@>=2.0.0 <=2.0.1: '>=2.0.2'
   js-yaml@>=4.0.0 <4.1.1: '>=4.1.1'
+  postcss@<8.5.10: ^8.5.10
+  uuid@<11.1.1: ^11.1.1
+  xlsx@<0.19.3: ^0.19.3
+  xlsx@<0.20.2: ^0.20.2

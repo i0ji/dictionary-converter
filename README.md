@@ -9,5 +9,5 @@ I decided to help him and wrote a small script for downloading TXT, and the outp
 KNOWN ISSUES:<br>
 [X] Not all vars are typed;<br>
 [X] FileUploader component has a "'trim' does not exist on type 'never'";<br>
-[&nbsp;&nbsp;] Alias issues + SCSS alias issues - to go;<br>
-[&nbsp;&nbsp;] GH-Pages difficulty to - go<br>
+[&nbsp;&nbsp;] Alias issues + SCSS alias issues;<br>
+[&nbsp;&nbsp;] GH-Pages difficulty;<br>

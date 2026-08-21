@@ -3,7 +3,9 @@ declare module 'sheetjs' {
 }
 
 declare global {
-  interface Window { XLSX: typeof XLSX; }
+  interface Window {
+    XLSX: typeof XLSX;
+  }
 }
 
 export as namespace XLSX;

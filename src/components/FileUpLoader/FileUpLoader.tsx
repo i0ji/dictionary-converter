@@ -5,10 +5,15 @@ import ExcelJS from 'exceljs';
 import styles from './FileUploader.module.scss';
 
 export default function FileUploader() {
-  const [excelBuffer, setExcelBuffer] = useState<ArrayBuffer | null>(null);
-  const [parsedRows, setParsedRows] = useState<string[][] | null>(null);
+  const [excelBuffer, setExcelBuffer] =
+    useState<ArrayBuffer | null>(null);
+  const [parsedRows, setParsedRows] = useState<
+    string[][] | null
+  >(null);
   const [progress, setProgress] = useState(0);
-  const [phase, setPhase] = useState<'idle' | 'processing' | 'ready' | 'saving'>('idle');
+  const [phase, setPhase] = useState<
+    'idle' | 'processing' | 'ready' | 'saving'
+  >('idle');
   const [isDragging, setIsDragging] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -39,7 +44,8 @@ export default function FileUploader() {
 
       rows.forEach((row, rowIndex) => {
         row.forEach((cell, colIndex) => {
-          worksheet.getCell(rowIndex + 1, colIndex + 1).value = cell;
+          worksheet.getCell(rowIndex + 1, colIndex + 1).value =
+            cell;
         });
       });
 
@@ -80,25 +86,33 @@ export default function FileUploader() {
     [excelBuffer, phase]
   );
 
-  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
+  const handleDragOver = (
+    e: React.DragEvent<HTMLDivElement>
+  ) => {
     e.preventDefault();
     e.stopPropagation();
     setIsDragging(true);
   };
 
-  const handleDragEnter = (e: React.DragEvent<HTMLDivElement>) => {
+  const handleDragEnter = (
+    e: React.DragEvent<HTMLDivElement>
+  ) => {
     e.preventDefault();
     e.stopPropagation();
     setIsDragging(true);
   };
 
-  const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
+  const handleDragLeave = (
+    e: React.DragEvent<HTMLDivElement>
+  ) => {
     e.preventDefault();
     e.stopPropagation();
     setIsDragging(false);
   };
 
-  const handleDrop = async (e: React.DragEvent<HTMLDivElement>) => {
+  const handleDrop = async (
+    e: React.DragEvent<HTMLDivElement>
+  ) => {
     e.preventDefault();
     e.stopPropagation();
     setIsDragging(false);
@@ -109,7 +123,9 @@ export default function FileUploader() {
     }
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = (
+    e: React.ChangeEvent<HTMLInputElement>
+  ) => {
     if (e.target.files?.[0]) {
       processFile(e.target.files[0]);
     }
@@ -117,7 +133,11 @@ export default function FileUploader() {
 
   const handleDropAreaClick = useCallback(
     (e: React.MouseEvent) => {
-      if (phase === 'idle' && !isDisabled && !e.defaultPrevented) {
+      if (
+        phase === 'idle' &&
+        !isDisabled &&
+        !e.defaultPrevented
+      ) {
         fileInputRef.current?.click();
       }
     },
@@ -128,7 +148,9 @@ export default function FileUploader() {
     <div className={styles.container}>
       <div
         className={`${styles.dropArea} ${isDragging ? styles.dragging : ''} ${
-          phase === 'processing' || phase === 'saving' ? styles.disabled : ''
+          phase === 'processing' || phase === 'saving'
+            ? styles.disabled
+            : ''
         }`}
         onDragOver={handleDragOver}
         onDragEnter={handleDragEnter}
@@ -140,13 +162,21 @@ export default function FileUploader() {
           <div className={styles.progressContainer}>
             <p>🔄 TXT → Excel... {Math.round(progress)}%</p>
             <div className={styles.progressBar}>
-              <div className={styles.progressFill} style={{ width: `${progress}%` }} />
+              <div
+                className={styles.progressFill}
+                style={{ width: `${progress}%` }}
+              />
             </div>
           </div>
         )}
 
         {phase === 'ready' && parsedRows && (
-          <div className={styles.saveButton} onClick={saveExcel} role="button" tabIndex={0}>
+          <div
+            className={styles.saveButton}
+            onClick={saveExcel}
+            role="button"
+            tabIndex={0}
+          >
             <p>✅ Готов Excel!</p>
             <p>💾 Сохранить ({parsedRows.length} строк)</p>
           </div>

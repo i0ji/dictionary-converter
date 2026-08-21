@@ -19,7 +19,6 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "components": ["./src/components/*"],
@@ -32,7 +31,8 @@
     ".next/types/**/*.ts",
     "next-env.d.ts",
     "build/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
-, "src/components/FileUpLoader.tsx.old"  ],
+    ".next/dev/types/**/*.ts",
+    "src/components/FileUpLoader.tsx.old"
+  ],
   "exclude": ["node_modules"]
 }

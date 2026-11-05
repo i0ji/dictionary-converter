@@ -4,7 +4,7 @@ allowBuilds:
   unrs-resolver: true
 minimumReleaseAgeExclude:
   - flatted@3.4.2
-  - brace-expansion@5.0.5 || 5.0.6 || 5.0.8 || 5.0.9
+  - brace-expansion@5.0.5 || 5.0.6 || 5.0.8 || 5.0.9 || 5.0.10 || 5.0.11 || 5.0.12
   - picomatch@2.3.2 || 4.0.4
   - postcss@8.5.10
   - uuid@11.1.1
@@ -33,11 +33,16 @@ minimumReleaseAgeExclude:
   - react@19.3.0
   - scheduler@0.28.0
   - baseline-browser-mapping@2.11.0
+  - source-map-js@1.2.2
+  - zod@4.6.6
+  - minimatch@11.0.1
 overrides:
   '@eslint/plugin-kit@<0.3.4': '>=0.3.4'
   brace-expansion@>=1.0.0 <=1.1.11: '>=1.1.12'
   brace-expansion@>=2.0.0 <=2.0.1: '>=2.0.2'
   js-yaml@>=4.0.0 <4.1.1: '>=4.1.1'
+  minimatch@>=7.0.0 <11.0.1: ^11.0.1
   nanoid@<3.3.17: ^3.3.17
   postcss@<8.5.10: ^8.5.10
+  source-map-js@>=1.0.0 <1.2.2: ^1.2.2
   uuid@<11.1.1: ^11.1.1
